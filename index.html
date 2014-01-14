@@ -1,163 +1,201 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Рекомендательный сервис Recomendr</title>
+    <title>Рекомендательный сервис Recomendr</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Alex Glagoliev, Igor Vovk">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Alex Glagoliev, Igor Vovk">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/serif.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-                <section>
-                    <h1>Recomendr</h1>
-                </section>
-				<section align="left">
-					<p>Ничто не производит на клиента большего впечатления, чем сознание того факта, что вы потратили на свое время и усилия, чтобы собрать информацию о его ситуации и способах решения его проблем.</p>
-                    <br>
-					<i>Брайан Трейси.</i>
-				</section>
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Recomendr</h1>
+        </section>
+        <section align="left">
+            <p>Ничто не производит на клиента большего впечатления, чем сознание того факта, что вы потратили на свое
+                время и усилия, чтобы собрать информацию о его ситуации и способах решения его проблем.</p>
+            <br>
+            <i>Брайан Трейси.</i>
+        </section>
 
-				<section align="left">
-					Одно из правил успешной продажи гласит: <b>"Помогайте покупать, а не продавайте"</b>
-				</section>
+        <section align="left">
+            Одно из правил успешной продажи гласит: <b>"Помогайте покупать, а не продавайте"</b>
+        </section>
 
-				<section align="left">
-					<h4>Чтобы помочь клиенту купить, нужно убрать факторы, которые могут помешать ему выбрать товар и оплатить покупку</h4>
-					<ul>
-						<li>Минимизировать время поиска и выбора товара. (Показывать максимум интересующих клиента товаров и не показывать то, что ему изначально не подходит)</li>
-						<li>Ранжировать товар не только по цене/размеру/дате поступления, но и по "интересности" товара для покупателя</li>
-						<li>Сделать удобной и простой покупку сопутствующих товаров</li>
-						<li>Показать покупателю максимум интересующих его товаров</li>
-					</ul>
-				</section>
+        <section align="left">
+            <h4>Чтобы помочь клиенту купить, нужно убрать факторы, которые могут помешать ему выбрать товар и оплатить
+                покупку</h4>
+            <ul>
+                <li>Минимизировать время поиска и выбора товара. (Показывать максимум интересующих клиента товаров и не
+                    показывать то, что ему изначально не подходит)
+                </li>
+                <li>Ранжировать товар не только по цене/размеру/дате поступления, но и по "интересности" товара для
+                    покупателя
+                </li>
+                <li>Сделать удобной и простой покупку сопутствующих товаров</li>
+                <li>Показать покупателю максимум интересующих его товаров</li>
+            </ul>
+        </section>
 
-				<section align="left">
-					Для решения описанных проблем используются рекомендательные сервисы.<p> Это программные комплексы, которые анализируют различные входные данные (информацию о товаре, информацию об интересах пользователей, поведение пользователей, и. т. д.), и на основе этого анализа составляют индивидуальные списки рекомендуемых товаров.
-				</section>
+        <section align="left">
+            Для решения описанных проблем используются рекомендательные сервисы.<p> Это программные комплексы, которые
+            анализируют различные входные данные (информацию о товаре, информацию об интересах пользователей, поведение
+            пользователей, и. т. д.), и на основе этого анализа составляют индивидуальные списки рекомендуемых товаров.
+        </section>
 
-				<section align="left">
-					Самые распространенные примеры - блок "похожие статьи" на новостных сайтах, "с этим товаром покупают" в интернет магазинах, прочие.
-				</section>
+        <section align="left">
+            Самые распространенные примеры - блок "похожие статьи" на новостных сайтах, "с этим товаром покупают" в
+            интернет магазинах, прочие.
+        </section>
 
-				<section align="left">
-					<h3>Как работает рекомендательный сервис?</h3>
-					<ul>
-						<li>Рекомендации, основанные на общих свойствах товаров</li>
-						<li>Рекомендации, основанные на поведении пользователя (анализ просмотренных страниц, время, потраченное пользователем на анализ товара, история переходов покупателя по страницам магазина)</li>
-						<li>Рекомендации, основанные на отношении товаров друг к другу (при покупке фотоаппарата порекомендуем подходящие аксессуары, к лыжам - ботинки и палки)</li>
-					</ul>
-				</section>
+        <section align="left">
+            <h3>Как работает рекомендательный сервис?</h3>
+            <ul>
+                <li>Рекомендации, основанные на общих свойствах товаров</li>
+                <li>Рекомендации, основанные на поведении пользователя (анализ просмотренных страниц, время, потраченное
+                    пользователем на анализ товара, история переходов покупателя по страницам магазина)
+                </li>
+                <li>Рекомендации, основанные на отношении товаров друг к другу (при покупке фотоаппарата порекомендуем
+                    подходящие аксессуары, к лыжам - ботинки и палки)
+                </li>
+            </ul>
+        </section>
 
-				<section align="left">
-					<h4>На рынке существует несколько решений, в каждом из которых есть свои плюсы и минусы.<br> </h4>
-					<ul>
-						<li><a href="http://www.baynote.com">http://baynote.com</a></li>
-			        	<li><a href="http://retailrocket.ru">http://retailrocket.ru</a></li>
-			        	<li><a href="http://hipredict.com">http://hipredict.com</a></li>
-		        	</ul>
-				</section>
+        <section align="left">
+            <h4>На рынке существует несколько решений, в каждом из которых есть свои плюсы и минусы.<br></h4>
+            <ul>
+                <li><a href="http://www.baynote.com">http://baynote.com</a></li>
+                <li><a href="http://retailrocket.ru">http://retailrocket.ru</a></li>
+                <li><a href="http://hipredict.com">http://hipredict.com</a></li>
+            </ul>
+        </section>
 
-				<section>
-					<h3>По разным данным, установка рекомендательного сервиса повышает конверсию на 100%-300%.</h3>
-				</section>
+        <section>
+            <h3>По разным данным, установка рекомендательного сервиса повышает конверсию на 100%-300%.</h3>
+        </section>
 
-				<section>
-					<h3>Преимущества нашего продукта:</h3>
-					<ul>
-						<li>Он готов к употреблению :)</li>
-						<li>Гибкость настроек (высокий уровень абстракции. Качество рекомендаций не зависит от типа контента)</li>
-						<li>Высокая точность рекомендаций. Алгоритм машинного обучения, который постоянно самосовершенствуется учитывая особенности покупателей и товаров</li>
-						<li>Высокая степень приватности. Вы сами решаете, какие данные открывать. Для высокого качества рекомендаций нам нужны только открытые данные.</li>
-						<li>NDA в комплекте! :)</li>
-						<li>Простая интеграция. Нет! Очень простая интеграция!</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Работая с нами Вы получите:</h3>
-					<ul>
-						<li>Рекомендации, которые формируются с помощью сложных алгоритмов машинного обучения и искусственного интелекта.</li>
-						<li>Сервис, который формирует рекомендации в реальном времени, таким образом предоставляя наилучшие условия для совершения покупок.</li>
-						<li>Формирование рекомендаций происходит на наших вычислительных мощностях, не требуя от вас никаких дополнительных ресурсных затрат</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Мы поможем покупателю принести вам деньги, ни разу не споткнувшись по пути!</h3>
-				</section>
-                <section>
-                    <h2>Контакты</h2>
-                    <p>
-                        Александр Глаголев (<a href="mailto:aglagoliev@gmail.com">aglagoliev@gmail.com</a>)
-                    </p>
-                    <p>
-                        Игорь Вовк (<a href="mailto:adwolf15@gmail.com">adwolf15@gmail.com</a>)
-                    </p>
-                </section>
-			</div>
+        <section>
+            <h3>Преимущества нашего продукта:</h3>
+            <ul>
+                <li>Он готов к употреблению :)</li>
+                <li>Гибкость настроек (высокий уровень абстракции. Качество рекомендаций не зависит от типа контента)
+                </li>
+                <li>Высокая точность рекомендаций. Алгоритм машинного обучения, который постоянно самосовершенствуется
+                    учитывая особенности покупателей и товаров
+                </li>
+                <li>Высокая степень приватности. Вы сами решаете, какие данные открывать. Для высокого качества
+                    рекомендаций нам нужны только открытые данные.
+                </li>
+                <li>NDA в комплекте! :)</li>
+                <li>Простая интеграция. Нет! Очень простая интеграция!</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Работая с нами Вы получите:</h3>
+            <ul>
+                <li>Рекомендации, которые формируются с помощью сложных алгоритмов машинного обучения и искусственного
+                    интелекта.
+                </li>
+                <li>Сервис, который формирует рекомендации в реальном времени, таким образом предоставляя наилучшие
+                    условия для совершения покупок.
+                </li>
+                <li>Формирование рекомендаций происходит на наших вычислительных мощностях, не требуя от вас никаких
+                    дополнительных ресурсных затрат
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Мы поможем покупателю принести вам деньги, ни разу не споткнувшись по пути!</h3>
+        </section>
+        <section>
+            <h2>Контакты</h2>
 
-		</div>
+            <p>
+                Александр Глаголев (<a href="mailto:aglagoliev@gmail.com">aglagoliev@gmail.com</a>)
+            </p>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+            <p>
+                Игорь Вовк (<a href="mailto:adwolf15@gmail.com">adwolf15@gmail.com</a>)
+            </p>
+        </section>
+    </div>
 
-		<script>
+</div>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-                slideNumber: true,
-                previewLinks: true,
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+<script>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: true,
+        previewLinks: true,
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
-		</script>
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-	</body>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            } },
+            { src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            } }
+        ]
+    });
+
+</script>
+
+</body>
 </html>
